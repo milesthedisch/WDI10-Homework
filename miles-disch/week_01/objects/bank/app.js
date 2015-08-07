@@ -43,9 +43,11 @@ var bank = {
         for (var i = 0; i < bank.accounts.length; i++) {
             if (bank.accounts[i].name === n) {
                 console.log('this account exsists!')
-            } else if (bank.accounts[i] !== n) {
-            	console.log('this account dosent exsist')
             }
+        }
+        for (var j = 0; j < bank.accounts.length; i++) {
+        	if (bank.accounts[i].name !== n)
+        		bank.accounts.push({name: n, balance: b})
         }
     }
 }
