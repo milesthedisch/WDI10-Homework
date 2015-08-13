@@ -1,4 +1,5 @@
 var cat = document.querySelector('#cat');
+var catSrc = "http://www.anniemation.com/clip_art/images/cat-walk.gif"
 var bodyWidth = window.innerWidth;
 
 
@@ -6,25 +7,42 @@ cat.style.left = '0px';
 var walkRight = function() {
 
   var oldLeft = parseInt(cat.style.left);
-  var newLeft = oldLeft + 4;
+  var newLeft = oldLeft + 1;
   cat.style.left = newLeft + 'px';
-if (parseInt(cat.style.left) >= (window.innerWidth - 296)) {
+	if (parseInt(cat.style.left) >= (window.innerWidth - 296)) {
   	  	window.clearInterval(walkTimer);
   	  	var transform = cat.style.transform = "scale(-1, 1)";
-  	  	walkTimerTwo = window.setInterval(walkLeft, 1);
-  	  	debugger;
-  }
+	  	walkTimerTwo = window.setInterval(walkLeft, 1);
+  	} else if ( parseInt(cat.style.left) === parseInt(window.innerWidth/2)	 ) {
+  		dance(); 
+  	}
 };
+
+ var dance = function ( ) {	
+	var newCatSrc = "http://38.media.tumblr.com/ba2307cf0b380cd12064d1811db20c2b/tumblr_nt05sdyVbg1s02vreo2_400.gif"
+	cat.src = newCatSrc
+ 	window.clearInterval(walkTimer)
+ 	var timeout = window.setTimeout(stopdance, 3000)
+}
+
+var stopdance = function ( ) {
+	cat.src = catSrc
+	var walkTimer2 = window.setInterval(walkRight, 10)
+}
+
 
 var walkLeft = function() {
 	var oldRight = parseInt(cat.style.left);
-	var newRight = oldRight - 4;
+	var newRight = oldRight - 1;
 	cat.style.left = newRight + 'px';
 	if (parseInt(cat.style.left) <= 0){
 		window.clearInterval(walkTimerTwo);
 		var transform = cat.style.transform = "scale(1, 1)";
 		walkTimer = window.setInterval(walkRight, 1);
 	} 
+	else if ( parseInt(cat.style.left) == parseInt(window.innerWidth/2)	 ) {
+  		dance(); 
+  	}
 };
 
 // var walkLeft = function () {
