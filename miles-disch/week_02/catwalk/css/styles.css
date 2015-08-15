@@ -1,3 +1,8 @@
-img {
-	
+.backgroundImage {
+	background: url("http://www.hdwallpapersllc.com/wp-content/uploads/2015/07/cat-wallpaper-16.jpg");
+	position: relative;
+}
+
+body div:first-child {
+
 }
