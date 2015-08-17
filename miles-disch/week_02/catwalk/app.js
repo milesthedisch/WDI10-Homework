@@ -25,6 +25,9 @@ var walkRight = function() {
 	cat.src = newCatSrc
 	clearInterval(walkTimer)
 	var timeOut = setTimeout(stopdance, 3000);
+	if (parseInt(cat.style.left) < window.innerWidth/2 - 100) {
+			
+	}
 }
 
 var stopdance = function ( ) {
@@ -32,7 +35,7 @@ var stopdance = function ( ) {
 	if (parseInt(cat.style.left) <= (window.innerWidth/2) - 100) {
 		 var walkTimer = setInterval(walkRight, 10)
 	} else if (parseInt(cat.style.left) >= (window.innerWidth/2) - 100){
-		var walkTimerTwo = setInterval(walkLeft, 10)
+		var walkTimerTwo = setInterval(walkLeft, 10	)
 	}
 }
 

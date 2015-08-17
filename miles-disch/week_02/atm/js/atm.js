@@ -29,7 +29,7 @@ var atm = {
   },
   withdrawChecking: function() {
       var drawAmountFromChk = parseInt($("#checking-amount").val());
-      if ( drawAmountFromChk > atm.savingsBalance && drawAmountFromChk > atm.checkingBalance || drawAmountFromChk > atm.savingBalance ) {        
+      if ( drawAmountFromChk > atm.savingsBalance && drawAmountFromChk > atm.checkingBalance || drawAmountFromChk > atm.savings-balanceBalance ) {        
       	alert("you aint got enough dolla dolla bills yo.")
       } 
       else if ( drawAmountFromChk > atm.checkingBalance ) {
