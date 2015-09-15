@@ -22,11 +22,14 @@ input {
 	padding: 0.5rem 0.25rem;
 	font-family: 'Fredoka One', cursive;
 	color: $secondaryColor;
+	transition: all 0.3s ease;
+	border-radius: 3px;
 }
 
 input:focus {
-	border: none;
-	box-shadow: none;
+	border: 1px solid lightblue;
+	box-shadow: 0 2px rgba(255,255,255,0.4);
+	padding-left: 20px;
 	outline: none;
 }
 
