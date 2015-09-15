@@ -1,0 +1,74 @@
+.top-nav {
+	padding: 1rem
+}
+
+$primaryColor: #39c;
+$secondaryColor: #67b8de;
+$tertiaryColor: #91c9e8;
+
+body {
+	font-size: 15px;
+	color: $primaryColor;
+	font-weight: 100;
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	background-color: $tertiaryColor;
+}
+
+input {
+	border: none;
+	font-size: 20px;
+	line-height: 27px;
+	padding: 0.5rem 0.25rem;
+	font-family: 'Fredoka One', cursive;
+	color: $secondaryColor;
+}
+
+input:focus {
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+body
+{
+	font-family: 'Fredoka One', cursive;
+	padding: 50px;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: .25rem .5rem;
+	display: block;
+	width: 30%;
+	margin: 1rem auto 0 auto;
+	border-radius: 10px;
+	font-size: 17px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+
+.clear {
+	clear: both;
+}

@@ -1,0 +1,7 @@
+<h1>index coming soon</h1>
+
+<ul>
+<% @mountains.each do |mountain| %>
+	<li> <%= link_to(mountain.name, mountain_path(mountain.id)) %> <%= pluralize(mountain.deaths, "death") %>.</li>	
+<% end %>
+</ul>

@@ -1,0 +1,7 @@
+<h1><%= @author.name %></h1>
+<%= image_tag @author.image, :class => 'feature' %>
+<p><%= @author.nationality %></p>
+<p><%= @author.dob.strftime "%A, %e %B %Y" if @author.dob%></p>
+
+<%= link_to('Edit', edit_author_path(@author)) %>
+<%= link_to 'Delete', @author, :method => 'delete', :data => { :confirm => "Are you sure?" } %>

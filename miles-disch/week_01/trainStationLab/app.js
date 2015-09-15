@@ -30,7 +30,7 @@ var endJourney = [];
 
 	var route = function ( startLine, startStation, endLine, endStation ) {
 		var start = startLine.indexOf(startStation);
-		var end = startLine.indexOf(endStation);
+		var end = endLine.indexOf(endStation);
 		var UnionSquare = startLine.indexOf("Union Square");
 			if (startLine === endLine) {	
 				if (start > end) {

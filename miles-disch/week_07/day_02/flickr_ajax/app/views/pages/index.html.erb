@@ -1,0 +1,10 @@
+
+<div style="text-align: center;">
+	<form id="search" class="top-nav search" role="search">
+		<h1>Flick my Iris</h1>
+		<%= text_field_tag 'query', nil, :placeholder => 'Butterflies' %>
+		<a href="#" onclick="$(this).closest('form').submit()" class="yellow action-button animate">Flick</a>
+		<div class="clear"></div>
+	</form>
+	<div id="results"></div>
+</div>
